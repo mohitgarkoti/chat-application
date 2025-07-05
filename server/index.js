@@ -6,6 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/chat', chatRoutes); // simple test route
+app.use('/api/chat', chatRoutes); 
 
 module.exports = app;
