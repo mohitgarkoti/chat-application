@@ -1,0 +1,149 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+/* background: url('/bg.jpg') no-repeat center center fixed; */
+
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Join Screen */
+.join-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.join-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.join-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.join-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.join-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Screen */
+.chat-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.message.system {
+  background-color: #e7f3ff;
+  color: #0066cc;
+}
+
+.message strong {
+  color: #333;
+}
+
+.input-container {
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .chat-container {
+    height: 80vh;
+  }
+  
+  .join-container {
+    padding: 20px;
+  }
+}
